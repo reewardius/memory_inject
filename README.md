@@ -16,5 +16,6 @@ victim host
 
 attacker host
 1) $ nc victim_host 5600
+2) $ nc 172.17.0.1 5600
 
 Usually, in a normal container, you will not have cap_sys_ptrace capability but in this case, the creator has enabled this explicitly. This means any process the started in the container can debug the process and perform RW operations in the memory.
